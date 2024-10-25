@@ -1,7 +1,14 @@
 * {
     font-family: "Montserrat";
-    background-color: rgb(248, 243, 236);
+    
+    /* background-color: rgb(248, 243, 236); */
 
+
+}
+
+body {
+    background: linear-gradient(180deg, rgb(248, 243, 236), rgb(235, 235, 235));
+    color: #333;
 }
 
 
@@ -100,7 +107,8 @@ html {
     font-weight: 900;
     width: 140px;
     height: 50px;
-    border: 2px solid black;
+    border: 2px solid rgb(50, 50, 50);
+    border-radius: 10px;
     padding-left: 10px;
     padding-right: 10px;
     display: flex;
@@ -113,7 +121,10 @@ html {
 
 .LearnMoreButton:hover {
     transform: scale(1.2);
+    font-size: 110%;    
+    border: 3px solid black;
     cursor: pointer;
+    background-color: rgb(249, 239, 225);
 }
 
 .arrow {
@@ -143,9 +154,20 @@ html {
 
 
 
+
+
+
 .MainText {
-    /* background-image: url("./images/backgroundImage.jpg"); */
-    background-repeat: repeat;
+    text-align: center;
+    padding: 20px;
+    /* background-image: url("./images/backgroundImage.jpg");
+    background-repeat: repeat; */
+}
+
+h1 {
+    font-weight: bold;
+    line-height: 1.2;
+    color: #2c3e50;
 }
 
 h2 { /* About */
@@ -168,7 +190,7 @@ h2 { /* About */
     height: 300px;
     justify-content: flex-start;
     padding-top: 2%;
-    line-height: 30px;
+    line-height: 2.0;
     font-size: 16px;
 }
 
