@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Tyler Prellwitz's Website</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+
+        <div id="scrollIndicator"></div>
+
         <div class="MainText">
             <div class="IntroText">
                 <h1 class="slideInLeft">Hello, I'm Tyler.</h1>
@@ -25,58 +33,103 @@
 
             
     
-            <h2 id="about"><b>About</b></h2>
-                <div class="About">
-                    <div class="Writing">
-                        <p>
-                            I am a computer science student currently attending Las Positas College, planning on transferring to a four-year 
-                            University. With a strong interest in software development, I work on projects that I am invested in and care 
-                            about. I put 100% of my effort into everything I do; Why would you ever put in any less? I am extremely self 
-                            motivated to get things done, and work towards self fulfillment every day.
-                        </p>
-                    </div>
-                    
-
-                    <div class="Software">
-                        <img src="./images/python.png" class="softwareLogo" id="python">
-                        <img src="./images/java.png" class="softwareLogo" id="java">
-                        <img src="./images/cpp.png" class="softwareLogo" id="cpp">
-                        <img src="./images/html.png" class="softwareLogo" id="html">
-                        <img src="./images/css.svg" class="softwareLogo" id="css">
-                        <img src="./images/git.png" class="softwareLogo" id="git">
-                    </div>
+            <h2 class="underline", id="about"><b>About</b></h2>
+            <div class="About", class="underline">
+                <div class="AboutMeWriting">
+                    <p>
+                        I’m a computer science student at Las Positas College, 
+                        preparing to transfer to a four-year university. With a 
+                        passion for software development, I focus on projects that 
+                        resonate with me, pouring 100% effort into every task. Why 
+                        give anything less? I am self-motivated and driven by a 
+                        commitment to personal growth and fulfillment. My approach 
+                        combines persistence, curiosity, and a genuine desire to 
+                        build meaningful, impactful software. I’m constantly learning 
+                        and challenging myself, knowing that each project brings me 
+                        one step closer to my goals.
+                    </p>
                 </div>
                 
+
+                <div class="Software">
+                    <img src="./images/python.png" class="softwareLogo" id="python">
+                    <img src="./images/java.png" class="softwareLogo" id="java">
+                    <img src="./images/cpp.png" class="softwareLogo" id="cpp">
+                    <img src="./images/html.png" class="softwareLogo" id="html">
+                    <img src="./images/css.svg" class="softwareLogo" id="css">
+                    <img src="./images/git.png" class="softwareLogo" id="git">
+                </div>
+            </div>
+                
     
-            <h2><b>Projects</b></h2>
+            <h2 class="underline"><b>Projects</b></h2>
+
+
                 <div class="Project">
-                    <h3>
-                        Project #1 Arbitrage
-                    </h3>
-                    <p>
-                        this is what i did in project #1<br>
-                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                        <a href="https://github.com/preltyler006/arbitrage.git" target="blank">Github</a><br>                    </p>
+                    <div class="Project1">
+                        <h3 class="ProjectTitle">01. Arbitrage</h3>
+                        <div class="project-content">
+                            <ul>
+                                <li>Created a Python tool to uncover betting opportunities, using data analysis to find potential profits in sports odds across various platforms.</li>
+                                <li>Utilized a third-party API for up-to-date odds information, showcasing the ability to integrate external datasets for strategic insights.</li>
+                                <li>Showcased expertise in data processing, including extracting, organizing, and analyzing odds to identify mismatches.</li>
+                                <li>Managed data consistency issues, refining the data input process to maintain accuracy in finding profitable outcomes.</li>
+                                <li>Focused on automating the analysis process, ensuring a seamless evaluation of betting scenarios.</li>
+                            </ul>
+                            <div class="images">
+                                <img id="betMGM" src="./images/betMGM.png">
+                                <img id="arbitrageScreenshot" src="./images/arbitrageScreenshot.png">
+                            </div>
+                        </div>
+                        <br>
+                        <a href="https://github.com/preltyler006/arbitrage.git" target="_blank" class="github-link">
+                            <img src="images/githubLogo.png" alt="GitHub" class="github-logo"> View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="Project"> 
+                    <div class="Project2">
+                        <h3 class="ProjectTitle">02. MarineSaver</h3>
+                        <div class="project-content">
+                            <div class="images">
+                                <img id="marineSaverSlide" src="./images/marineSaver.png">
+                                <img id="raspberryPi" src="./images/raspberryPiMarineSaver.png">
+                            </div>
+                            <ul>
+                                <li>Developed an endangered marine species detection tool using a Raspberry Pi with a LoveRPI camera and Keras neural network for image classification, identifying endangered species in fishing catch data.</li>
+                                <li>Designed an AI-powered solution positioned above conveyor belts to monitor bycatch, enhancing transparency and accountability in the fishing industry.</li>
+                                <li>Utilized Keras and ImageAI for robust image classification to ensure endangered species were detected accurately, supporting consumer trust in dolphin-safe and eco-friendly labels.</li>
+                                <li>Addressed environmental conservation by targeting harmful fishing practices, providing a technological alternative to ineffective policies and existing satellite monitoring efforts.</li>
+                                <li>Calculated cost-effective manufacturing and pricing to make the tool accessible, with a projected profit margin, offering a practical, scalable solution for widespread industry adoption.</li>
+                            </ul>
+                        </div>
+                        <br>
+                            <a href="https://github.com/preltyler006/marineSaverV1" target="_blank" class="github-link">
+                                <img src="images/githubLogo.png" alt="GitHub" class="github-logo"> View on GitHub
+                            </a>
+                    </div>
                 </div>
         </div>
+
     
-        <h2>Contact Me</h2>
-            <div class="Contact">
-                <h3>
-                    set up email here
-                </h3>
+        <div class="contact-section">
+            <h2 id="contactTitle">Contact Me</h2>
+            <p>If you have any questions or would like to get in touch, feel free to send me an email:</p>
+            <a href="mailto:tylerprellwitz@gmail.com" class="contact-button">Send an Email</a>
+        
+            <div class="OtherWebsites">
+                <a href="https://github.com/preltyler006" target="blank">
+                    <img src="./images/githubLogo.png" class="logo" id="gitHubLogo">
+                </a>
+                
+                <a href="https://www.linkedin.com/in/tyler-prellwitz-0737b5250/">
+                    <img src="./images/linkedinLogo.png" class="logo" id="gitHubLogo">
+                </a>
             </div>
 
-        <div class="OtherWebsites">
-            <a href="https://github.com/preltyler006" target="blank">
-                <img src="./images/githubLogo.png" class="logo" id="gitHubLogo">
-            </a>
-            
-            <a href="https://www.linkedin.com/in/tyler-prellwitz-0737b5250/">
-                <img src="./images/linkedinLogo.png" class="logo" id="gitHubLogo">
-            </a>
         </div>
-
+        
 
         <script src="script.js" async defer></script>
     </body>
