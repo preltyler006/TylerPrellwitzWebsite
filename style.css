@@ -208,6 +208,7 @@ html {
 }
 
 #html {
+    width: 20.6%;
     padding-left: 4%;
     padding-right: 4%;
 }
@@ -496,4 +497,197 @@ h2 { /*About, Projects, Contact Me Header*/
     transform: scale(1.2);
     cursor: pointer;
 
+}
+
+
+/*<----------------------------MEDIA QUERIES---------------------------->*/
+
+
+
+/* Base media query for smaller phones (up to 600px wide) */
+/* For small screens (up to 600px wide) */
+/* For small screens (up to 600px wide) */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .slideInLeft {
+        font-size: 30px;
+    }
+
+    .slideInRight {
+        font-size: 30px;
+    }
+
+    .About {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        max-width: 100%;
+        flex-flow: column;
+        padding-bottom: 150px;
+    }
+
+    .AboutMeWriting {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        font-size: 14px;
+        height: 440px;
+
+    }
+
+    .AboutMeWriting p {
+        width: 65%;
+
+    }
+
+    .Software {
+        display: flex;
+        height: 200px;
+        width: 100%;
+        justify-content: space-evenly;
+        align-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+    /* #java {
+        padding: 0px;
+        max-width: 8%;
+    } */
+
+    .softwareLogo {
+        max-width: 24%;
+    }
+
+
+    .Project1, .Project2 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .project-content{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .contact-section p {
+        width: 70%;
+    }
+
+    .project-content ul li {
+        font-size: 12px;
+    }
+
+    #arbitrageScreenshot {
+        max-width: 100%;
+        width: 400px;
+    }
+
+
+    
+
+    /* Stack items vertically in main content areas */
+
+
+
+    /* Center titles and adjust size */
+    h2, h3 {
+        text-align: center;
+        font-size: 22px;
+        margin: 15px 0;
+    }
+
+    /* Make images responsive and full-width */
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 6px;
+    }
+
+    /* Adjust spacing and layout of list items */
+    ul {
+        max-width: 90%;
+        padding: 0;
+        margin: 0;
+        list-style-position: inside;
+
+    }
+
+    /* Adjust button sizes and alignment */
+
+    .Project1 a.github-link {
+        font-size: 14px;
+        padding: 10px 10px;
+        text-align: center;
+        padding-left: 20px;
+    }
+
+    .Project1 .github-link img {
+        text-align: center;
+    }
+
+
+}
+
+/* For medium screens (up to 768px wide) */
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    /* Center align text for better readability */
+    h2, h3 {
+        text-align: center;
+        font-size: 26px;
+    }
+
+    .project-content, .contact-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* Full-width images with slight padding */
+    img {
+        max-width: 95%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    /* Add padding for list items */
+    ul {
+        padding: 10px;
+    }
+}
+
+/* For larger tablets and small desktops (up to 1024px wide) */
+@media only screen and (max-width: 1024px) {
+    h2, h3 {
+        font-size: 30px;
+        text-align: left;
+    }
+
+    .project-content, .contact-section {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    /* Keep images at a comfortable size */
+    img {
+        max-width: 80%;
+        height: auto;
+    }
 }
