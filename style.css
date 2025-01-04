@@ -303,6 +303,9 @@ h2 { /*About, Projects, Contact Me Header*/
 
 }
 
+.Project3{
+    margin-bottom: 200px;
+}
 
 .ProjectTitle{
     font-size: 30px;
@@ -386,6 +389,10 @@ h2 { /*About, Projects, Contact Me Header*/
 
 #raspberryPi {
     max-width: 100%;
+}
+
+#ThreeDGraph {
+    max-width: 88%;
 }
 
 
@@ -520,7 +527,6 @@ h2 { /*About, Projects, Contact Me Header*/
     .about-section, .project-content, .contact-section {
         max-width: 100vw; /* Ensures these sections don’t exceed the viewport width */
         padding: 0 15px; /* Add padding to avoid text touching the edge */
-        overflow-x: hidden; /* Extra safety for any overflow issues */
     }
 
     .slideInLeft {
